@@ -1,0 +1,8 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LuisCavalari/contactCloud.git",
+  "author": "Luis Cavalari",
+  "license": "MIT"
+}
