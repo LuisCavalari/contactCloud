@@ -14,8 +14,8 @@ module.exports = (request, response, next) => {
         const decode =  jwt.decode(token, process.env.APP_secret)
 
         request.userId = decode.id
-        return response.json({message: 'OK', id:request.userId})
     } catch (error) {
         response.status(400).send({ message: 'invalid token' })
     }
+    return next()
 }

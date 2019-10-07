@@ -26,6 +26,8 @@
   "define":{
     "timestamp":"false",
     "underscored": "true",
+    "createdAt": "createdat",
+    "updatedAt": "updatedat",
     "underscoredAll": "true"
   }
 }

@@ -1,13 +1,17 @@
+
+
 module.exports = (sequelize, dataTypes) => {
-    const Contact = sequelize.define('Contact', {
+    const Contact = sequelize.define('Contacts', {
         name: dataTypes.STRING,
         phone: dataTypes.STRING,
         email: dataTypes.STRING,
-        userId: dataTypes.INTEGER
+        UserId: dataTypes.INTEGER
 
+    },{
+        sequelize
     })
     Contact.associate = function (models) {
-        Contact.belongsTo(models.Users, { foreignKey: 'userId', as: ' user' })
+        Contact.belongsTo(models.Users, { foreignKey: 'UserId' , as:'user' })
     }
     return Contact;
 }
